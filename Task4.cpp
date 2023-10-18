@@ -1,13 +1,11 @@
 ﻿#include <iostream>
 
 int climbStairs(int n) {
-    // Базові випадки:
     if (n == 1)
         return 1;
     if (n == 2)
         return 2;
 
-    // Рекурсивно обчислюємо кількість комбінацій для n-1 та n-2 кроків
     return climbStairs(n - 1) + climbStairs(n - 2);
 }
 
